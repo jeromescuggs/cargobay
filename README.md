@@ -7,7 +7,7 @@ i spend alot of time setting up devboards and then breaking them, and i can't do
 ## install
 you should have rustup installed, if not, 
 
-`url -sSf https://sh.rustup.rs | sh`
+`curl -sSf https://sh.rustup.rs | sh`
 
 please check the code yourself before executing it!!! 
 
