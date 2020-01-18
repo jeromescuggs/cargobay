@@ -18,7 +18,7 @@ rustup will install rust and its package manager, cargo. more importantly it cre
 
 clone this repo. navigate to the folder which has your desired cpu architecture: 
 
-* `arm` - arm6 (rpi zero/w)
+* `arm` - arm6 (rpi zero/w) **WIP** - to compile for the arm6l architecture i'll have to learn how to set up a toolchain manually, so hold tight!
 * `arm7` - arm7hf (rpi 2/3, orange pi zero etc)
 * `aarch64` - arm64/aarch64 (64-bit rpi3b+, nanopi neo2, orangepi one plus and other boards with allwinner h5/h6)
 
