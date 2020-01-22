@@ -1,0 +1,19 @@
+if [ -e $HOME/.cargo/bin/exa ]
+    then
+        alias ls="exa"
+        alias la="exa -l -a -G"
+        alias l="exa -@ -l -a"
+    fi 
+
+if [ -e $HOME/.cargo/bin/lsd ]
+    then 
+        alias ls="lsd"
+        alias la="lsd -a" 
+        alias l="lsd -l -a --date relative --blocks permission,name,date,user"
+        alias ll="exa -G -l -h --color-scale --all"
+    fi 
+
+if [ -e $HOME/.cargo/bin/broot ]
+    then 
+        alias lll="br -s -d -p -h"
+    fi

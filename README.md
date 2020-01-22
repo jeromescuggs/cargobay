@@ -4,6 +4,8 @@ a collection of rust commandline programs for aarch64 devboards.
 ## what
 i spend alot of time setting up devboards and then breaking them, and i can't do that on a bland terminal. and while aarch64-based devboards are the speed demons of the SoC universe, have you ever tried compiling a rust app on one natively? yeah. 
 
+`cargo-bay` is a collection of rust binaries which will sped up your initial setup by providing some common tools. the selection here is purely personal, and might be missing something or contain things you might not personally use. 
+
 ## install
 
 ### if you want rust 
@@ -21,6 +23,7 @@ clone this repo. navigate to the folder which has your desired cpu architecture:
 * `arm` - arm6 (rpi zero/w) **WIP** - to compile for the arm6l architecture i'll have to learn how to set up a toolchain manually, so hold tight!
 * `arm7` - arm7hf (rpi 2/3, orange pi zero etc)
 * `aarch64` - arm64/aarch64 (64-bit rpi3b+, nanopi neo2, orangepi one plus and other boards with allwinner h5/h6)
+* `x86_64` - x86 (64-bit) (pretty much any desktop, if you're not sure what architecture you're using, it is probably this one)
 
 copy the contents of the ``bin`` folder to `.cargo/bin`, and then move the `vivid` directory into your ``.config`` folder located in your home directory, ie, ~/. 
 
@@ -35,13 +38,23 @@ open up your shell's init file (bash: .bashrc, zsh: .zshrc, etc) and add the lin
 
 reload with `exec bash` or `exec zsh` etc, and voila - any app you place in `.cargo/bin` will be executable system-wide.
 
+### (optional) setup aliases for your ls replacement
+
+if you wind up wanting to use `exa` or `lsd` or even both, i have uploaded a copy of my own alias file in the root folder, the file is called `.exa-ls`. to use it, copy it into your home directory and add the following to your `.zshrc` or `.bashrc`:
+
+`source /home/$USER/.exa-ls`
+
 ## the goods 
+this is not exhaustive - some architectures might be missing some of these, or might even have some i have yet to list. 
+
 so far: 
 
+* exa - a replacement for ls that adds alot more color, and alot more options. 
 * bat - it's like cat but with coloring, syntax highlighting, a nice layout, etc. repo at sharkdp/bat 
 * vivid - allows one to set awesome ls colors with little to no hassle, and manage the colors with themes. another sharkdp creation, check out sharkdp/vivid for the full install guide - you'll need to stick a line in your shell init script. 
 * starship - a prompt theme along the lines of purepower, but with the functionality of liquidprompt - basically it's awesome. project at starship/starship 
 * pastel - another whammy from sharkdp. this tool allows you to look up all the colors. like all of them. and you can play with them! you might find a nice shade and want it one, two, six shades darker - there's a command for that. compare shades, generate random colors for inspiration, you can even set up a colorpicker and use your mouse to select a point on your desktop, and `pastel` will tell you all about the color you select. project at sharkdp/bat
+* broot - a new tool that is a mashup of `ls`, `tree` with features reminiscent of programs like `nnn`. somewhat tricky to explain, for more information i suggest checking out the repo over at Canop/broot. 
 
 ### contact 
 
