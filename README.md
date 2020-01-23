@@ -1,7 +1,7 @@
 # cargo-bay
 a collection of rust commandline programs for aarch64 devboards. 
 
-<script id="asciicast-295481" src="https://asciinema.org/a/295481.js" async></script>
+[![asciicast](https://asciinema.org/a/295481.svg)](https://asciinema.org/a/295481)
 
 ## what
 i spend alot of time setting up devboards and then breaking them, and i can't do that on a bland terminal. and while aarch64-based devboards are the speed demons of the SoC universe, have you ever tried compiling a rust app on one natively? yeah. 
