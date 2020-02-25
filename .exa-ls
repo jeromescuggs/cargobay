@@ -1,19 +1,24 @@
-if [ -e $HOME/.cargo/bin/exa ]
-    then
+#!/bin/bash
+
+#if [ -e $HOME/.cargo/bin/exa ]
+#    then
+if [[ -x "$(command -v exa)" ]]; then
         alias ls="exa"
         alias la="exa -l -a -G"
         alias l="exa -@ -l -a"
     fi 
 
-if [ -e $HOME/.cargo/bin/lsd ]
-    then 
+# if [ -e $HOME/.cargo/bin/lsd ]
+#    then 
+if [[ -x "$(command -v lsd)" ]]; then
         alias ls="lsd"
         alias la="lsd -a" 
         alias l="lsd -l -a --date relative --blocks permission,name,date,user"
         alias ll="exa -G -l -h --color-scale --all"
     fi 
 
-if [ -e $HOME/.cargo/bin/broot ]
-    then 
-        alias lll="br -s -d -p -h"
+# if [ -e $HOME/.cargo/bin/broot ]
+#    then 
+if [[ -x "$(command -v broot)" ]]; then
+    alias lll="br -s -d -p -h"
     fi
