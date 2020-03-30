@@ -1,7 +1,7 @@
 # cargo-bay
 a collection of rust commandline programs for aarch64 devboards. 
 
-<mark>UPDATE 3/29/2020</mark> 
+## <mark>UPDATE 3/29/2020</mark> 
 
 I am currently in the process of removing each architecture folder and moving them to independent repositories, and then readding them in as submodules. 
 
