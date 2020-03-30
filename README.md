@@ -1,7 +1,11 @@
 # cargo-bay
 a collection of rust commandline programs for aarch64 devboards. 
 
-[![asciicast](https://asciinema.org/a/295481.svg)](https://asciinema.org/a/295481)
+<mark>UPDATE 3/29/2020</mark> 
+
+I am currently in the process of removing each architecture folder and moving them to independent repositories, and then readding them in as submodules. 
+
+This repository will then become the home of a shellscript that will open a small menu which lets you select and install the desired cargo apps for your desired cpu type. 
 
 ## what
 i spend alot of time setting up devboards and then breaking them, and i can't do that on a bland terminal. and while aarch64-based devboards are the speed demons of the SoC universe, have you ever tried compiling a rust app on one natively? yeah. 
@@ -23,7 +27,7 @@ rustup will install rust and its package manager, cargo. more importantly it cre
 clone this repo. navigate to the folder which has your desired cpu architecture: 
 
 * `arm` - arm6 (rpi zero/w) **WIP** - to compile for the arm6l architecture i'll have to learn how to set up a toolchain manually, so hold tight!
-* `arm7` - arm7hf (rpi 2/3, orange pi zero etc)
+* `armv7l` - arm7hf (rpi 2/3, orange pi zero etc)
 * `aarch64` - arm64/aarch64 (64-bit rpi3b+, nanopi neo2, orangepi one plus and other boards with allwinner h5/h6)
 * `x86_64` - x86 (64-bit) (pretty much any desktop, if you're not sure what architecture you're using, it is probably this one)
 
