@@ -8,8 +8,6 @@ I am currently in the process of removing each architecture folder and moving th
 This repository will then become the home of a shellscript that will open a small menu which lets you select and install the desired cargo apps for your desired cpu type. 
 
 ## what
-i spend alot of time setting up devboards and then breaking them, and i can't do that on a bland terminal. and while aarch64-based devboards are the speed demons of the SoC universe, have you ever tried compiling a rust app on one natively? yeah. 
-
 `cargo-bay` is a collection of rust binaries which will sped up your initial setup by providing some common tools. the selection here is purely personal, and might be missing something or contain things you might not personally use. 
 
 ## install
@@ -55,13 +53,17 @@ this is not exhaustive - some architectures might be missing some of these, or m
 
 so far: 
 
-* exa - a replacement for ls that adds alot more color, and alot more options. 
+* [exa] - a replacement for ls that adds alot more color, and alot more options. 
 * bat - it's like cat but with coloring, syntax highlighting, a nice layout, etc. repo at sharkdp/bat 
-* vivid - allows one to set awesome ls colors with little to no hassle, and manage the colors with themes. another sharkdp creation, check out sharkdp/vivid for the full install guide - you'll need to stick a line in your shell init script. 
+* [vivid] - allows one to set awesome ls colors with little to no hassle, and manage the colors with themes. another sharkdp creation, check out sharkdp/vivid for the full install guide - you'll need to stick a line in your shell init script. 
 * starship - a prompt theme along the lines of purepower, but with the functionality of liquidprompt - basically it's awesome. project at starship/starship 
 * pastel - another whammy from sharkdp. this tool allows you to look up all the colors. like all of them. and you can play with them! you might find a nice shade and want it one, two, six shades darker - there's a command for that. compare shades, generate random colors for inspiration, you can even set up a colorpicker and use your mouse to select a point on your desktop, and `pastel` will tell you all about the color you select. project at sharkdp/bat
-* broot - a new tool that is a mashup of `ls`, `tree` with features reminiscent of programs like `nnn`. somewhat tricky to explain, for more information i suggest checking out the repo over at Canop/broot. 
+* [broot] - a new tool that is a mashup of `ls`, `tree` with features reminiscent of programs like `nnn`. somewhat tricky to explain, for more information i suggest checking out the repo over at Canop/broot. 
 
 ### contact 
 
 feel free to reach out to me for any reason, maybe you'd like a little help, maybe you'd like to see more programs compiled for aarch64, maybe you're pissed at my lazy handling of a project you created - i'll help out best i can!
+
+[exa]: https://github.com/ogham/exa
+[broot]: https://github.com/canop/broot
+[vivid]: https://github.com/sharkdp/vivid
