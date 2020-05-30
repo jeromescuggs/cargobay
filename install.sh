@@ -1,0 +1,13 @@
+#!/bin/bash
+
+CB_CPU=$(uname -m)
+
+echo "detected CPU:"
+echo "$CB_CPU"
+sleep 1s
+echo "searching for submodule cb-$CB_CPU"
+git submodule update --init ./cb-$CB_CPU
+echo "-----------------------------------------------------------------------"
+echo "done. navigate to submodule folder and run the install.sh              "
+echo "script to move binaries to your cargo bin (default \$HOME/.cargo/bin)  "
+echo "-----------------------------------------------------------------------"
