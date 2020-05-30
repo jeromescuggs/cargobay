@@ -1,3 +1,6 @@
 [submodule "cb-aarch64"]
 	path = cb-aarch64
 	url = git://github.com/jeromescuggs/cb-aarch64.git
+[submodule "cb-armv7l"]
+	path = cb-armv7l
+	url = https://github.com/jeromescuggs/cb-armv7l
