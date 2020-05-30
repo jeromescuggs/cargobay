@@ -1,16 +1,16 @@
 # cargo-bay
 a collection of rust commandline programs for aarch64 devboards. 
 
-## <mark>UPDATE 3/29/2020</mark> 
-
-I am currently in the process of removing each architecture folder and moving them to independent repositories, and then readding them in as submodules. 
-
-This repository will then become the home of a shellscript that will open a small menu which lets you select and install the desired cargo apps for your desired cpu type. 
-
 ## what
 `cargo-bay` is a collection of rust binaries which will sped up your initial setup by providing some common tools. the selection here is purely personal, and might be missing something or contain things you might not personally use. 
 
 ## install
+
+### quick
+
+if you already have `cargo` via `rustup`, simply run navigate to the local copy of this repo and run `install.sh`. the install file will look for the appropriate binaries for your CPU, and if found, will then populate the appropriate submodule. 
+
+navigate to the submodule and find the `install.sh` script there, run it to automatically copy the binaries and config settings to their appropriate locations (set to the defaults in `~/.cargo/bin` and `.config`. 
 
 ### if you want rust 
 
