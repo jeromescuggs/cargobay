@@ -4,3 +4,6 @@
 [submodule "cb-armv7l"]
 	path = cb-armv7l
 	url = https://github.com/jeromescuggs/cb-armv7l
+[submodule "cb-x86_64"]
+	path = cb-x86_64
+	url = https://github.com/jeromescuggs/cb-x86_64
