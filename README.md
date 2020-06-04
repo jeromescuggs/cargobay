@@ -8,7 +8,7 @@ a collection of rust commandline programs for aarch64 devboards.
 
 ### quick
 
-if you already have `cargo` via `rustup`, simply run navigate to the local copy of this repo and run `install.sh`. the install file will look for the appropriate binaries for your CPU, and if found, will then populate the appropriate submodule. 
+if you already have `cargo` via `rustup`, simply run navigate to the local copy of this repo and run `./bootstrap`. the install file will look for the appropriate binaries for your CPU, and if found, will then populate the appropriate submodule. 
 
 navigate to the submodule and find the `install.sh` script there, run it to automatically copy the binaries and config settings to their appropriate locations (set to the defaults in `~/.cargo/bin` and `.config`. 
 
