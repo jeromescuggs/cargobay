@@ -1,6 +1,6 @@
 # DEPRECATED!
 
-**currently re-structuring this project over at [cargo-bay]. this repo is here for archival purposes only. **
+**currently re-structuring this project over at [cargo-bay]. this repo is here for archival purposes only.**
 
 [cargo-bay]: https://github.com/jeromescuggs/cargo-bay
 
