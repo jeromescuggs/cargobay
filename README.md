@@ -1,4 +1,10 @@
-# cargo-bay
+# DEPRECATED!
+
+**currently re-structuring this project over at [cargo-bay]. this repo is here for archival purposes only. **
+
+[cargo-bay]: https://github.com/jeromescuggs/cargo-bay
+
+## cargo-bay
 a collection of rust commandline programs for aarch64 devboards. 
 
 ## what
